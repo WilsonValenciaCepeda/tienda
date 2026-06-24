@@ -28,7 +28,6 @@
             background: #f1f5f9;
             border-radius: 8px;
         }
-        /* Fondo global con gradiente celeste-rosa */
         .bg-app {
             background: linear-gradient(135deg, #7dd3fc 0%, #f9a8d4 50%, #7dd3fc 100%);
             min-height: 100vh;
@@ -199,10 +198,11 @@
         @yield('content')
     </main>
 
-    {{-- ===== FOOTER COMPLETO ===== --}}
+    {{-- ===== FOOTER COMPLETO CON CAMBIOS ===== --}}
     <footer class="bg-gray-800 text-gray-300 border-t-4 border-pink-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                {{-- Columna 1: Información de la empresa --}}
                 <div>
                     <h3 class="text-white font-bold text-lg mb-4">Conexión Electrónica</h3>
                     <p class="text-sm leading-relaxed">
@@ -213,6 +213,7 @@
                     </p>
                 </div>
 
+                {{-- Columna 2: Enlaces rápidos --}}
                 <div>
                     <h4 class="text-white font-semibold mb-3">Enlaces rápidos</h4>
                     <ul class="space-y-2 text-sm">
@@ -221,32 +222,42 @@
                     </ul>
                 </div>
 
+                {{-- Columna 3: Contacto --}}
                 <div>
                     <h4 class="text-white font-semibold mb-3">Contacto</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><i class="fas fa-phone mr-2"></i> 72582684</li>
-                        <li><i class="fas fa-envelope mr-2"></i> conexionelectronica@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> +591 72382122</li>
+                        <li><i class="fas fa-envelope mr-2"></i> conexionelectronica7@gmail.com</li>
                         <li><i class="fas fa-map-marker-alt mr-2"></i> Potosí - Bolivia</li>
                     </ul>
                 </div>
 
+                {{-- Columna 4: Redes sociales --}}
                 <div>
                     <h4 class="text-white font-semibold mb-3">Síguenos</h4>
                     <div class="flex space-x-4 text-xl">
+                        {{-- Facebook --}}
                         <a href="https://www.facebook.com/profile.php?id=61591145990948" target="_blank" class="hover:text-white transition">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="hover:text-white transition cursor-not-allowed opacity-50">
-                            <i class="fab fa-instagram"></i>
+                        {{-- TikTok --}}
+                        <a href="https://www.tiktok.com/@conexion.electron" target="_blank" class="hover:text-white transition">
+                            <i class="fab fa-tiktok"></i>
                         </a>
+                        {{-- YouTube --}}
                         <a href="https://www.youtube.com/@ConexionElectronica" target="_blank" class="hover:text-white transition">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#" class="hover:text-white transition cursor-not-allowed opacity-50">
+                        {{-- WhatsApp --}}
+                        <a href="https://wa.me/qr/NG4SBJXT4FONK1" target="_blank" class="hover:text-white transition">
                             <i class="fab fa-whatsapp"></i>
                         </a>
+                        {{-- Gmail --}}
+                        <a href="mailto:conexionelectronica7@gmail.com" class="hover:text-white transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
-                    <p class="text-xs text-gray-500 mt-2">Instagram y WhatsApp próximamente</p>
+                    <p class="text-xs text-gray-500 mt-2">¡Síguenos en todas nuestras redes!</p>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
