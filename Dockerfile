@@ -10,7 +10,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY . .
 
-RUN composer install --no-interaction --optimize-autoload --no-dev
+RUN composer install --no-interaction --optimize-autoloader --no-dev
 
 RUN php artisan key:generate
 
