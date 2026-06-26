@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 // Página de inicio
 Route::get('/', function () {
-    return view('inicio');
+    return view('welcome');
 })->name('inicio');
 
 // Tienda (catálogo)
