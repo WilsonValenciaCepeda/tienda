@@ -19,4 +19,4 @@ RUN composer install --no-interaction --optimize-autoloader --no-dev
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=10000"]
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=10000"]
