@@ -4,9 +4,8 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     zip \
     unzip \
-    && docker-php-ext-install pdo pdo_pgsql
-
-RUN docker-php-ext-enable zip
+    libzip-dev \
+    && docker-php-ext-install pdo pdo_pgsql zip
 
 WORKDIR /var/www/html
 
